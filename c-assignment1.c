@@ -126,7 +126,7 @@ int main(void)
         sum = num0 + num2 + num4 + num7 + num9 + (string[1] - 48U) + (string[3] - 48U) + (string[5] - 48U) + (string[8] - 48U); //sum of digits
         //printf("sum is %d\n", sum); // Used to check if the sum calculated is correct.
 
-        digit_C = (10 - (sum % 10)) % 10; // f the total modulo 10 is equal to 0  then the number is valid according to the Luhn formula
+        digit_C = (10 - (sum % 10)) % 10; // if the total modulo 10 is equal to 0  then the number is valid according to the Luhn formula
         //printf("Last digit should be %d,\n", digit_C); // Used to check if the control digit is correct.
 
         if (digit_C != string[10] - 48U)
